@@ -11,7 +11,7 @@
 <style scoped>
 
 .projectsection {
-    background-color: #edf2f8;
+    background-color: #f1f6ff;
     justify-content: center;
     align-items: flex-start;
     padding: 2rem;
@@ -24,10 +24,10 @@
 }
 .title {
     text-align: center;
-    color: rgba(12, 21, 29);
+    color: var(--primary-color);
 }
 .title .highlight {
-    color: #0050ff;
+    color: var(--secondary-color);
     text-transform: uppercase;
 }
 </style>

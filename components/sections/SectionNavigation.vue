@@ -29,10 +29,10 @@
     background-color: #cbcbcb;
 } 
 .navigation-item:hover {
-    background-color: #0050ff;
+    background-color: var(--secondary-color);
 }
 .active {
-    background-color: #0050ff !important;
+    background-color: var(--secondary-color) !important;
 }
 
 </style>

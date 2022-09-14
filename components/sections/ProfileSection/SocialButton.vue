@@ -23,7 +23,7 @@
         background-color: #FAF9F6;
     }
     .button:focus {
-        border: 2px solid rgba(0, 80, 255, 0.5);
+        border: 2px solid var(--secondary-color);
     }
     .button p {
         font-weight: 500;

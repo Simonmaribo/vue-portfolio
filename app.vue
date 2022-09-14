@@ -12,6 +12,10 @@
     text-decoration: none !important;
     scroll-behavior: smooth;
   }
+  :root {
+    --secondary-color: #00276D;
+    --primary-color: rgba(12, 21, 29);
+  }
   .container {
     display: flex;
     flex-direction: row;

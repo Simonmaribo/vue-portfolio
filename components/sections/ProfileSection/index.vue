@@ -36,12 +36,12 @@
 .title {
     font-size: 25px;
     font-weight: 700;
-    color: rgba(12, 21, 29);
+    color: var(--primary-color);
 }
 .profession {
     font-size: 16px;
     font-weight: 500;
-    color: rgb(0, 80 ,255);
+    color: var(--secondary-color);
 }
 .socials {
     margin-top: 1rem;
