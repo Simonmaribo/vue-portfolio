@@ -1,4 +1,5 @@
 {
+  "name": "vue-portfolio",
   "private": true,
   "scripts": {
     "build": "nuxt build",
