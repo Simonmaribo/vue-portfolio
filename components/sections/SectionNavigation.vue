@@ -8,6 +8,7 @@
 
 
 <style>
+
 .navigation {
     position: absolute;
     right: 0;
@@ -34,7 +35,11 @@
 .active {
     background-color: var(--secondary-color) !important;
 }
-
+@media (max-width: 500px){
+    .navigation {
+        display: none;
+    }
+}
 </style>
 
 

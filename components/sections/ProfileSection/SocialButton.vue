@@ -6,30 +6,38 @@
 </template>
 
 <style scoped>
-    .button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 0.4rem;
-        border-radius: 5px;
-        padding: 0.4rem 2rem;
-        cursor: pointer;
-        color: #000;
-        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-        border: 2px solid #fff;
-        user-select: none;
-    }
-    .button:hover {
-        background-color: #FAF9F6;
-    }
-    .button:focus {
-        border: 2px solid var(--secondary-color);
-    }
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border-radius: 5px;
+    padding: 0.4rem 2rem;
+    cursor: pointer;
+    color: #000;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    border: 2px solid #fff;
+    user-select: none;
+}
+.button:hover {
+    background-color: #FAF9F6;
+}
+.button:focus {
+    border: 2px solid var(--secondary-color);
+}
+.button p {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+@media (max-width: 500px){
     .button p {
-        font-weight: 500;
-        text-transform: capitalize;
+        display: none;
     }
+    .button {
+        padding: 0.5rem 0.5rem;
+    }
+}
 </style>
 
 <script>
