@@ -29,8 +29,7 @@
         },
         data() {
             return {
-                getEmoji(){
-                    console.log(this.type)
+                getEmoji: () => {
                     if(this.type === 'website'){
                         return 'mdi:web'
                     } else if(this.type === 'github'){

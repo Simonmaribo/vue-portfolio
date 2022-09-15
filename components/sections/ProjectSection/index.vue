@@ -5,8 +5,24 @@
             <h1 class="title">Showcase of my <span class="highlight-container"><span class="highlight">best</span></span> projects</h1>
         </div>
         <div class="project-list">
-            <Project title="PlexHost" type="Website" image="/projects/plexhost.png" description="Landing page made for the Minecraft Hosting provider PlexHost."/>
-            <Project title="Centox" type="Web App" image="/projects/centox.png" description="A self-hosted solution for creating/managing forms and applications."/>
+            <Project 
+                title="PlexHost" 
+                type="Website" 
+                image="/projects/plexhost.png" 
+                description="Landing page made for the Minecraft Hosting provider PlexHost."
+                :links="{
+                    website: 'https://plexhost.dk'
+                }"
+            />
+            <Project 
+                title="Centox" 
+                type="Web App" 
+                image="/projects/centox.png" 
+                description="A self-hosted solution for creating/managing forms and applications."
+                :links="{
+                    github: 'https://github.com/Simonmaribo/Centox'
+                }"
+            />
         </div>
     </div>
 </template>

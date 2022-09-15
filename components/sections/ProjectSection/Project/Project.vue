@@ -6,7 +6,9 @@
             </div>
             <img :src="image" :alt="title"/>
             <div class="hover">
-                
+                <div v-for="(value, key) in links">
+                    <ProjectLink :type="key" :link="value"/>
+                </div>
             </div>
         </div>
         <div class="information">
@@ -62,7 +64,7 @@
 .project-type {
     background-color: white;
     border-radius: 0px 0px 10px 10px;
-    padding: 0.1rem 0.5rem;
+    padding: 0.3em 0.5rem;
     position: absolute;
     top: -5px;
     z-index: 2;
@@ -70,7 +72,7 @@
 .project-type p {
     color: var(--primary-color);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .information {
@@ -98,7 +100,13 @@ export default {
         title: String,
         type: String,
         image: String,
-        description: String
+        description: String,
+        links: {
+            github: {
+                type: String,
+                required: false
+            },
+        }
     },
     components: {
         ProjectLink
