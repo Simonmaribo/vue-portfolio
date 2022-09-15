@@ -18,6 +18,7 @@
         color: #000;
         transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
         border: 2px solid #fff;
+        user-select: none;
     }
     .button:hover {
         background-color: #FAF9F6;

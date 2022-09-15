@@ -18,8 +18,18 @@
   }
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     min-height: 100vh;
     width: 100%;
+  }
+
+  ::selection {
+    color: #fff;
+    background: #000;
+  }
+
+  ::-moz-selection {
+    color: #fff;
+    background: #000;
   }
 </style>
