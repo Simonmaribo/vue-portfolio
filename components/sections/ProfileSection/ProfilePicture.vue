@@ -9,6 +9,8 @@
     img {
         width: 15rem;
         border-radius: 9999px;
+        -webkit-border-radius: 9999px;
+        -moz-border-radius: 9999px;
         outline: solid 3px var(--secondary-color);
         outline-offset: 4px;
     }
