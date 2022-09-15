@@ -72,7 +72,8 @@
     border-radius: 9999px;
 }
 .scroll-arrow:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    background-color: #FAF9F6;
 }
 </style>
   
