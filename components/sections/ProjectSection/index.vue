@@ -5,16 +5,22 @@
             <h1 class="title">Showcase of my <span class="highlight-container"><span class="highlight">best</span></span> projects</h1>
         </div>
         <div class="project-list">
-
+            <Project title="PlexHost" type="Website" image="/projects/plexhost.png" description="Landing page made for the Minecraft Hosting provider PlexHost."/>
+            <Project title="Centox" type="Web App" image="/projects/centox.png" description="A self-hosted solution for creating/managing forms and applications."/>
         </div>
     </div>
 </template>
-  
   
 <style scoped>
 
 .project-list {
     display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1300px;
 }
 .projectsection {
     background-color: #f1f6ff;
@@ -64,11 +70,13 @@
   
 <script lang="ts">
 import SectionNavigation from '../SectionNavigation.vue';
-  
+import Project from './Project/Project.vue';
+
 export default ({
 name: "ProjectSection",
 components: {
-    SectionNavigation
+    SectionNavigation,
+    Project
 } 
 })
 </script>

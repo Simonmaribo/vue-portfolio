@@ -6,7 +6,7 @@
             <ProfilePicture />
             <div class="profile">
             <h1 class="title">
-                Simon Maribo
+                Simon Maribo <span class="age">(17 y/o)</span>
             </h1>
             <h2 class="profession">
                 Self-taught Software Developer 
@@ -43,6 +43,10 @@
     font-size: 25px;
     font-weight: 700;
     color: var(--primary-color);
+}
+.title .age {
+    font-size: 16px;
+    font-weight: 500;
 }
 .profession {
     font-size: 16px;
