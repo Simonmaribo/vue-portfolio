@@ -2,7 +2,7 @@
     <div class="container projectsection" id="projects">
         <SectionNavigation activeSection="projects"/>
         <div class="center">
-            <h1 class="title">Showcase of my <span class="highlight-container"><span class="highlight">best</span></span> projects</h1>
+            <h1 class="title">Showcase of some <span class="highlight-container"><span class="highlight">projects</span></span></h1>
         </div>
         <div class="project-list">
             <Project 
@@ -21,6 +21,16 @@
                 description="A self-hosted solution for creating/managing forms and applications."
                 :links="{
                     github: 'https://github.com/Simonmaribo/Centox'
+                }"
+            />
+            <Project 
+                title="Plexit - Vagtdrab" 
+                type="Web App" 
+                image="/projects/plexit-lvd.png" 
+                description="A funny gimmick website, to show the latest guard who have died on the Minecraft-server Plexit.dk"
+                :links="{
+                    github: 'https://github.com/Simonmaribo/plexit-latest-killed-guard',
+                    website: 'https://vagtdrab.plexit.dk/'
                 }"
             />
         </div>

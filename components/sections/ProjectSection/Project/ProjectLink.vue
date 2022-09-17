@@ -17,6 +17,7 @@
         height: 50px;
         width: 50px;
         color: #FFF;
+        margin: 0rem 1rem;
     }
 </style>
 
