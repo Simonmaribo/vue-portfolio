@@ -17,7 +17,7 @@
         height: 50px;
         width: 50px;
         color: #FFF;
-        margin: 0rem 1rem;
+        margin: 0rem 0.5rem;
     }
 </style>
 
@@ -38,6 +38,8 @@
                         return 'ri:github-line'
                     } else if (this.type === 'figma'){
                         return 'ph:figma-logo'
+                    } else if (this.type === 'drawsql'){
+                        return "bi:filetype-sql"
                     }
                 }
             }

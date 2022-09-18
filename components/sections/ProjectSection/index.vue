@@ -40,6 +40,7 @@
                 description="A website, where you can review clubs and bars with your own experiences."
                 :links="{
                     figma: 'https://www.figma.com/file/OImeGakzIEPfpMgin0be0g/Clubreview?node-id=0%3A1',
+                    drawsql: 'https://drawsql.app/teams/maribo/diagrams/clubreview'
                 }"
             />
         </div>
