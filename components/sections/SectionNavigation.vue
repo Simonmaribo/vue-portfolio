@@ -2,7 +2,6 @@
     <div class="navigation">
         <a href="#profile" class="navigation-item" :class="{ active: isActive(activeSection, `profile`)}"/>
         <a href="#projects" class="navigation-item" :class="{ active: isActive(activeSection, `projects`)}"/>
-        <a href="#repositories" class="navigation-item" :class="{ active: isActive(activeSection, `repositories`)}"/>
     </div>
 </template>
 
