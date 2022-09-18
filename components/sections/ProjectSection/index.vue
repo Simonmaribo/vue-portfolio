@@ -55,7 +55,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-    max-width: 1300px;
+    max-width: 1520px;
 }
 .projectsection {
     background-color: #f1f6ff;
