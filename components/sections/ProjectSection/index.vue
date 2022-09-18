@@ -33,6 +33,15 @@
                     website: 'https://vagtdrab.plexit.dk/'
                 }"
             />
+            <Project
+                title="Clubreview"
+                type="Upcoming Web App"
+                image="/projects/clubreview.png"
+                description="A website, where you can review clubs and bars with your own experiences."
+                :links="{
+                    figma: 'https://www.figma.com/file/OImeGakzIEPfpMgin0be0g/Clubreview?node-id=0%3A1',
+                }"
+            />
         </div>
     </div>
 </template>

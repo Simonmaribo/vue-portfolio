@@ -31,10 +31,13 @@
         data() {
             return {
                 getEmoji: () => {
+                    // https://icones.js.org
                     if(this.type === 'website'){
                         return 'mdi:web'
                     } else if(this.type === 'github'){
                         return 'ri:github-line'
+                    } else if (this.type === 'figma'){
+                        return 'ph:figma-logo'
                     }
                 }
             }
