@@ -9,6 +9,9 @@ export default defineNuxtConfig({
         title: "Simon Maribo | Portfolio",
         link: [
             { rel: "icon", type: "image/x-icon", href: "/simonmaribo.png" },
+        ],
+        script: [
+            { src: "https://cdn.splitbee.io/sb.js", async: true },
         ]
     }
 })
