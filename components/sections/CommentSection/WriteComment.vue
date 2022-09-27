@@ -7,8 +7,8 @@
 
 <script>
 
-import { createToaster } from "@meforma/vue-toaster";
-const toaster = createToaster();
+//import { createToaster } from "@meforma/vue-toaster";
+//const toaster = createToaster();
 
 export default {
     name: "WriteComment",
@@ -31,10 +31,10 @@ export default {
                     this.message = "";
                     if(res.success){
                         this.$emit("comment", res.message);
-                        toaster.success("Your comment has been added!");
+                        //toaster.success("Your comment has been added!");
                     } else if (res.error) {
                         console.log(res.error);
-                        toaster.error(`Something went wrong! ${res.error}`);
+                        //toaster.error(`Something went wrong! ${res.error}`);
                     }
                 }).catch(err => {
                     this.message = "";
