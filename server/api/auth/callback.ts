@@ -21,7 +21,7 @@ export default defineEventHandler(async (event) => {
 
     const googleUser = await client.verifyIdToken({
         idToken: tokens.id_token,
-        audience: keys.web.client_id
+        audience: process.env.GOOGLE_CLIENT_ID
     });
     
     if(!googleUser) {
