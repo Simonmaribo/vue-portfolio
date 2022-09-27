@@ -1,12 +1,11 @@
 import { OAuth2Client } from "google-auth-library";
 
 import jwt from "jsonwebtoken";
-import keys from '../../../oauth.keys.json';
 
 const client = new OAuth2Client(
-    keys.web.client_id,
-    keys.web.client_secret,
-    keys.web.redirect_uris[0]
+    process.env.GOOGLE_CLIENT_ID,
+    process.env.GOOGLE_CLIENT_SECRET,
+    process.env.GOOGLE_REDIRECT_URI
 );
 
 export default defineEventHandler(async (event) => {
