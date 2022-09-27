@@ -8,3 +8,4 @@ node_modules
 dist
 yarn.lock
 .idea
+oauth.keys.json
