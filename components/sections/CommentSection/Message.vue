@@ -5,11 +5,14 @@
                 <div class="avatar-container">
                     <img class="avatar" :src="avatar" alt="Profile Image"/>
                 </div>
-                <p class="name">{{name}}</p>
+                <div>
+                    <p class="name">{{name}}</p>
+                    <p class="title">{{title}}</p>
+                </div>
             </div>
             <div class="text">{{text}}</div>
             <div class="footer">
-                <div class="stars">
+                <div class="stars" :style="{ color: getStarColor}">
                     <div v-for="(item, index) in stars" :key="index">
                         <Icon :name="item.filled ? 'material-symbols:star' : 'material-symbols:star-outline-rounded'"/>
                     </div>
@@ -28,8 +31,6 @@
     border: 1px solid rgb(229, 231, 235);
     border-radius: 0.5rem;
     padding: 16px;
-    min-width: 350px;
-    max-width: 500px;
 }
 
 .card .content {
@@ -50,6 +51,10 @@
     font-size: 1.1rem;
     color: #26272e;
 
+}
+.user .title {
+    font-size: 0.8rem;
+    color: #6b7280;
 }
 
 .user .avatar-container {
@@ -75,12 +80,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .stars {
     display: flex;
     gap: 0.1rem;
-    color: #fbbf24;
+    color: #0050ff;
 }
 
 .timestamp {
@@ -88,10 +94,17 @@
     color: #374151;
 }
 
+@media screen and (max-width: 1000px) {
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
 </style>
 
 <script>
-
 import dayjs from 'dayjs/esm/index.js';
 import relativeTime from 'dayjs/plugin/relativeTime.js';
 
@@ -103,6 +116,7 @@ export default {
         text: String,
         rating: Number,
         timestamp: String,
+        title: String
     },
     computed: {
         stars() {
@@ -116,6 +130,19 @@ export default {
         },
         formattedTimestamp() {
             return dayjs(new Date(this.timestamp)).format("D MMMM YYYY")
+        },
+        getStarColor() {
+            if(this.rating == 5){
+                return "#18b67a"
+            } else if(this.rating == 4){
+                return "#73cf12"
+            } else if (this.rating == 3){
+                return "#ffce00"
+            } else if (this.rating == 2){
+                return "#fe8622"
+            } else {
+                return "#fd3722 "
+            }
         }
     },
 }

@@ -16,4 +16,9 @@ export default defineNuxtConfig({
             { src: "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" },
         ]
     },
+    runtimeConfig: {
+        public: {
+            baseUrl: ''
+        }
+    }
 })

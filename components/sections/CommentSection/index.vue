@@ -2,14 +2,17 @@
     <div class="container extend" id="comment">
         <SectionNavigation activeSection="comment"/>
         <div class="messages">
-            <div v-for="message in messages" :key="message.googleId">
-                <Message
-                    :avatar="message.avatarUrl"
-                    :name="message.name"
-                    :text="message.text"
-                    :rating="message.rating"
-                    :timestamp="message.createdAt"
-                />
+            <div class="row" v-for="row in rows" :key="row">
+                <div v-for="message in row" :key="message.googleId" class="message">
+                    <Message
+                        :avatar="message.avatarUrl"
+                        :name="message.name"
+                        :text="message.text"
+                        :rating="message.rating"
+                        :timestamp="message.createdAt"
+                        :title="message.title"
+                    />
+                </div>
             </div>
         </div>
         <div class="comment">
@@ -25,6 +28,9 @@
   
   
 <style scoped>
+.message {
+    width: 100%;
+}
 .extend {
     background: #fff;
     padding: 2rem; 
@@ -33,8 +39,18 @@
 
 .messages {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
     gap: 1rem;
-    flex-wrap: wrap;
+}
+
+.row {
+    flex-grow: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
 .comment {
@@ -42,6 +58,25 @@
     justify-content: center;
     padding: 2rem;
 }
+
+@media screen and (max-width: 1500px) {
+    .row {
+        display: none;
+        width: 100%;
+    }
+    .row:nth-child(1){
+        display: flex;
+    }
+    .row:nth-child(2){
+        display: flex;
+    }
+}
+@media screen and (max-width: 750px) {
+    .row:nth-child(2){
+        display: none;
+    }
+}
+
 </style>
   
   
@@ -62,6 +97,12 @@ export default ({
     data() {
         return {
             authenticated: false,
+            rows: {
+                1: [],
+                2: [],
+                3: [],
+                4: []
+            },
             messages: []
         }
     },
@@ -71,15 +112,31 @@ export default ({
         },
         addNewComment(message) {
             this.messages.unshift(message);
+            this.loadRows();
         },
         fetchMessages() {
             $fetch('/api/messages').then((data) => {
                 this.messages = data.messages;
+                this.loadRows();
+                console.log(this.rows)
+            });
+        },
+        loadRows() {
+            this.messages.sort((a, b) => {
+                return b.rating - a.rating;
+            });
+
+            var i = 1;
+            this.messages.forEach((message) => {
+                this.rows[i].push(message);
+                i++;
+                if (i > 4) {
+                    i = 1;
+                }
             });
         }
     },
     mounted() {
-        this.fetchMessages();
-    }
+        this.fetchMessages();    }
 })
 </script>

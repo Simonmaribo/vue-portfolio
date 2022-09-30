@@ -21,6 +21,13 @@ export default defineEventHandler(async (event) => {
         }
     }
 
+    if(text.length > 1000) {
+        event.res.statusCode = 400;
+        return {
+            error: "Text is too long"
+        }
+    }
+
     rating = parseInt(rating);
     if(rating < 1 || rating > 5) {
         event.res.statusCode = 400;

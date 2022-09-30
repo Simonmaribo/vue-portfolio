@@ -15,6 +15,15 @@
                 }"
             />
             <Project 
+                title="PlexHost Dashboard" 
+                type="Web App" 
+                image="/projects/plexhost-dashboard.png" 
+                description="Dashboard made for the Minecraft Hosting provider PlexHost using Pterodactyl."
+                :links="{
+                    website: 'https://dashboard.plexhost.dk'
+                }"
+            />
+            <Project 
                 title="Centox" 
                 type="Web App" 
                 image="/projects/centox.png" 
@@ -40,7 +49,8 @@
                 description="A website, where you can review clubs and bars with your own experiences."
                 :links="{
                     figma: 'https://www.figma.com/file/OImeGakzIEPfpMgin0be0g/Clubreview?node-id=0%3A1',
-                    drawsql: 'https://drawsql.app/teams/maribo/diagrams/clubreview'
+                    drawsql: 'https://drawsql.app/teams/maribo/diagrams/clubreview',
+                    github: 'https://github.com/Simonmaribo/clubreview'
                 }"
             />
         </div>

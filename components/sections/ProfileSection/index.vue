@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="scroll-arrow-box">
-            <a href="#projects" class="scroll-arrow">
+            <a href="#comment" class="scroll-arrow">
                 <Icon name="ic:outline-keyboard-arrow-down" size="35px"/>
             </a>
         </div>

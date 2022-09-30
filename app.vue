@@ -11,6 +11,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none !important;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   :root {
     --secondary-color: #00276D;
@@ -24,12 +25,12 @@
   }
 
   ::selection {
-    color: #fff;
-    background: #000;
+    color: #0050ff;
+    background: rgb(239 246 255);
   }
 
   ::-moz-selection {
-    color: #fff;
-    background: #000;
+    color: #0050ff;
+    background: rgb(239 246 255);
   }
 </style>

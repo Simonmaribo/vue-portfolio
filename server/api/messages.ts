@@ -24,6 +24,7 @@ export default defineEventHandler(async (event) => {
             text: true,
             rating: true,
             name: true,
+            title: true,
             avatarUrl: true,
             createdAt: true
         }
