@@ -11,7 +11,6 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none !important;
     scroll-behavior: smooth;
-    overflow-x: hidden;
   }
   :root {
     --secondary-color: #00276D;
