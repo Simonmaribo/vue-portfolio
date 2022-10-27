@@ -1,6 +1,15 @@
 <template>
     <div class="container extend" id="comment">
         <SectionNavigation activeSection="comment"/>
+        <h1 class="title">Reviews of my work</h1>
+        <div class="comment">
+            <div v-if="!authenticated">
+                <LoginWithGoogle @authenticated.once="setAuthenticated"/>
+            </div>
+            <div v-else>
+                <WriteComment @comment="addNewComment"/>
+            </div>
+        </div>
         <div class="messages">
             <div class="row" v-for="row in rows" :key="row">
                 <div v-for="message in row" :key="message.googleId" class="message">
@@ -13,14 +22,6 @@
                         :title="message.title"
                     />
                 </div>
-            </div>
-        </div>
-        <div class="comment">
-            <div v-if="!authenticated">
-                <LoginWithGoogle @authenticated.once="setAuthenticated"/>
-            </div>
-            <div v-else>
-                <WriteComment @comment="addNewComment"/>
             </div>
         </div>
     </div>
@@ -56,7 +57,11 @@
 .comment {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+}
+
+.title {
+    text-align: center;
+    color: var(--primary-color);
 }
 
 @media screen and (max-width: 1500px) {

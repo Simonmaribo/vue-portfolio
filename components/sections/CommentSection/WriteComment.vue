@@ -66,6 +66,7 @@ form {
 }
 
 .rating {
+  cursor: pointer;
   margin: 1rem 1rem 1rem 0;
   background-color: transparent;
   --dir: right;
