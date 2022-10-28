@@ -53,6 +53,15 @@
                     github: 'https://github.com/Simonmaribo/clubreview'
                 }"
             />
+            <Project
+                title="Pandoras Box"
+                type="IOS App"
+                image="/projects/pandoras-box.png"
+                description=""
+                :links="{
+                    ios: 'https://apps.apple.com/us/app/pandoras-æske/id1642058011'
+                }"
+            />
         </div>
     </div>
 </template>
