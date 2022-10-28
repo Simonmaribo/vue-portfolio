@@ -9,3 +9,4 @@ dist
 yarn.lock
 .idea
 oauth.keys.json
+.DS_Store
