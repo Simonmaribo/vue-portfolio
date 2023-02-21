@@ -32,27 +32,6 @@
                     github: 'https://github.com/Simonmaribo/Centox'
                 }"
             />
-            <Project 
-                title="Plexit - Vagtdrab" 
-                type="Web App" 
-                image="/projects/plexit-lvd.png" 
-                description="A funny gimmick website, to show the latest guard who have died on the Minecraft-server Plexit.dk"
-                :links="{
-                    github: 'https://github.com/Simonmaribo/plexit-latest-killed-guard',
-                    website: 'https://vagtdrab.plexit.dk/'
-                }"
-            />
-            <Project
-                title="Clubreview"
-                type="Upcoming Web App"
-                image="/projects/clubreview.png"
-                description="A website, where you can review clubs and bars with your own experiences."
-                :links="{
-                    figma: 'https://www.figma.com/file/OImeGakzIEPfpMgin0be0g/Clubreview?node-id=0%3A1',
-                    drawsql: 'https://drawsql.app/teams/maribo/diagrams/clubreview',
-                    github: 'https://github.com/Simonmaribo/clubreview'
-                }"
-            />
         </div>
     </div>
 </template>
