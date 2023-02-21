@@ -40,6 +40,8 @@
                         return 'ph:figma-logo'
                     } else if (this.type === 'drawsql'){
                         return "bi:filetype-sql"
+                    } else if (this.type === "ios"){
+                        return "ic:baseline-apple"
                     }
                 }
             }
