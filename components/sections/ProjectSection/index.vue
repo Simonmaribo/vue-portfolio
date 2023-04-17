@@ -41,6 +41,15 @@
                     ios: 'https://apps.apple.com/us/app/pandoras-æske/id1642058011'
                 }"
             />
+            <Project
+                title="McSetups"
+                type="Web App"
+                image="/projects/mcsetups.png"
+                description="Marketplace where users can buy and sell Minecraft Products (Plugins, Maps, Skripts etc.)"
+                :links="{
+                    website: 'https://mcsetups.dk'
+                }"
+            />
         </div>
     </div>
 </template>
