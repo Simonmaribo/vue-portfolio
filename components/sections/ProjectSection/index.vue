@@ -42,6 +42,15 @@
                     website: 'https://pandoras-box-app.vercel.app'
                 }"
             />
+            <Project
+                title="McSetups"
+                type="Web App"
+                image="/projects/mcsetups.png"
+                description="Marketplace where users can buy and sell Minecraft Products (Plugins, Maps, Skripts etc.)"
+                :links="{
+                    website: 'https://mcsetups.dk'
+                }"
+            />
         </div>
     </div>
 </template>
