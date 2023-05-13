@@ -38,7 +38,8 @@
                 image="/projects/pandoras-box.png"
                 description="An App where people can put questions in a box anonymously."
                 :links="{
-                    ios: 'https://apps.apple.com/us/app/pandoras-æske/id1642058011'
+                    ios: 'https://apps.apple.com/us/app/pandoras-æske/id1642058011',
+                    website: 'https://pandoras-box-app.vercel.app'
                 }"
             />
         </div>
