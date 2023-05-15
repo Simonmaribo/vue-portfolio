@@ -51,6 +51,15 @@
                     website: 'https://mcsetups.dk'
                 }"
             />
+            <Project
+                title="NB-Metal"
+                type="Website"
+                image="/projects/nbmetal.png"
+                description="Webpage for NB-Metal A/S, a metal subcontractor."
+                :links="{
+                    website: 'https://nb-metal.dk'
+                }"
+            />
         </div>
     </div>
 </template>
