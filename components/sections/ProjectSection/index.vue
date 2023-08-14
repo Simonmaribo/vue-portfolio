@@ -39,6 +39,7 @@
                 description="An App where people can put questions in a box anonymously."
                 :links="{
                     ios: 'https://apps.apple.com/us/app/pandoras-æske/id1642058011',
+                    playstore: 'https://play.google.com/store/apps/details?id=com.simonmaribo.pandorabox',
                     website: 'https://pandoras-box-app.vercel.app'
                 }"
             />

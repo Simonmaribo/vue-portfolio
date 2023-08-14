@@ -6,7 +6,7 @@
             </div>
             <img :src="image" :alt="title"/>
             <div class="hover">
-                <div v-for="(value, key) in links">
+                <div v-for="(value, key) in links" :key="value">
                     <ProjectLink :type="key" :link="value"/>
                 </div>
             </div>

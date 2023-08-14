@@ -42,6 +42,8 @@
                         return "bi:filetype-sql"
                     } else if (this.type === "ios"){
                         return "ic:baseline-apple"
+                    } else if (this.type === "playstore"){
+                        return "mdi:google-play"
                     }
                 }
             }
