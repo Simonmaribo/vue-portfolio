@@ -26,10 +26,10 @@
             <Project 
                 title="Centox" 
                 type="Web App" 
-                image="/projects/centox.png" 
-                description="A self-hosted solution for creating/managing forms and applications."
+                image="/projects/centox2.png" 
+                description="Centox is a application/forum for Discord/gaming communities."
                 :links="{
-                    github: 'https://github.com/Simonmaribo/Centox'
+                    website: 'https://centox.io?ref=simonmaribo.dk'
                 }"
             />
             <Project
