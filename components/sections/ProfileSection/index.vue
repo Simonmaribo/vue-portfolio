@@ -6,7 +6,7 @@
             <ProfilePicture />
             <div class="profile">
             <h1 class="title">
-                Simon Maribo <span class="age">(18 y/o)</span>
+                Simon Maribo <span class="age">({{ age }} y/o)</span>
             </h1>
             <h2 class="profession">
                 Self-taught Software Developer 
@@ -84,11 +84,30 @@ import SocialButton from './SocialButton.vue';
 import SectionNavigation from '../SectionNavigation.vue';
   
 export default ({
-name: "ProfileSection",
-components: {
-    ProfilePicture,
-    SocialButton,
-    SectionNavigation
-} 
+    name: "ProfileSection",
+    components: {
+        ProfilePicture,
+        SocialButton,
+        SectionNavigation
+    },
+    data() {
+        return {
+            age: this.calculateAge()
+        }
+    },
+    mounted() {
+        setInterval(() => {
+            this.age = this.calculateAge();
+        }, 1000)  
+    },
+    methods: {
+        calculateAge() {
+            const birthday = new Date(2005, 9, 8);
+            const now = new Date();
+            const diff = now.getTime() - birthday.getTime();
+            const ageWithMillis = diff / (1000 * 60 * 60 * 24 * 365.25);
+            return ageWithMillis.toFixed(2).replace(".", ",");
+        }
+    }
 })
 </script>
