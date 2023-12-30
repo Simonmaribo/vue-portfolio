@@ -2,7 +2,7 @@
     <div class="navigation">
         <a href="#profile" class="navigation-item" :class="{ active: isActive(activeSection, `profile`)}"/>
         <a href="#projects" class="navigation-item" :class="{ active: isActive(activeSection, `projects`)}"/>
-        <a href="#comment" class="navigation-item" :class="{ active: isActive(activeSection, `comment`)}"/>
+        <!--<a href="#comment" class="navigation-item" :class="{ active: isActive(activeSection, `comment`)}"/>-->
     </div>
 </template>
 

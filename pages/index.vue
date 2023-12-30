@@ -2,7 +2,7 @@
     <div>
         <ProfileSection/>
         <ProjectSection/>
-        <CommentSection/>
+        <!--<CommentSection/>-->
         <Footer/>
     </div>
 </template>

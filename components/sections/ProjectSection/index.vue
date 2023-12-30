@@ -34,13 +34,23 @@
             />
             <Project
                 title="Pandoras Box"
-                type="IOS App"
+                type="Mobile App"
                 image="/projects/pandoras-box.png"
                 description="An App where people can put questions in a box anonymously."
                 :links="{
                     ios: 'https://apps.apple.com/us/app/pandoras-æske/id1642058011',
                     playstore: 'https://play.google.com/store/apps/details?id=com.simonmaribo.pandorabox',
                     website: 'https://pandoras-box-app.vercel.app'
+                }"
+            />
+            <Project
+                title="Plan Mates"
+                type="IOS App"
+                image="/projects/planmates.png"
+                description="An app to coordinate preferred dates with friends and Web "
+                :links="{
+                    ios: 'https://apps.apple.com/us/app/plan-mates/id6449609947',
+                    website: 'https://planmate.plexit.group'
                 }"
             />
             <Project
