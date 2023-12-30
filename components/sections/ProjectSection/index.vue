@@ -71,6 +71,15 @@
                     website: 'https://nb-metal.dk'
                 }"
             />
+            <Project
+                title="Unge Iværksættere"
+                type="Website"
+                image="/projects/ui.png"
+                description="Webpage for Unge Iværksættere, a non-profit event organizer for young entrepreneurs."
+                :links="{
+                    website: 'https://ui.plexit.group'
+                }"
+            />
         </div>
     </div>
 </template>
