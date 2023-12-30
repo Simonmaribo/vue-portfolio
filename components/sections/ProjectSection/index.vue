@@ -14,7 +14,7 @@
                     website: 'https://plexhost.dk'
                 }"
             />
-            <Project 
+            <!--<Project 
                 title="PlexHost Dashboard" 
                 type="Web App" 
                 image="/projects/plexhost-dashboard.png" 
@@ -22,7 +22,7 @@
                 :links="{
                     website: 'https://dashboard.plexhost.dk'
                 }"
-            />
+            />-->
             <Project 
                 title="Centox" 
                 type="Web App" 
