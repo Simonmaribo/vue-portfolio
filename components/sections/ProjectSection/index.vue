@@ -72,12 +72,21 @@
                 }"
             />
             <Project
-                title="Unge Iværksættere"
-                type="Website"
-                image="/projects/ui.png"
-                description="Webpage for Unge Iværksættere, a non-profit event organizer for young entrepreneurs."
+                title="Minecraft-list.gg"
+                type="Web App"
+                image="/projects/minecraft-list.png"
+                description="Minecraft server list system with Votifier integration and slot auctions."
                 :links="{
-                    website: 'https://ui.plexit.group'
+                    website: 'https://minecraft-list.gg'
+                }"
+            />
+            <Project
+                title="Minecraft Buzz Auctions"
+                type="Web App"
+                image="/projects/minecraft-buzz.png"
+                description="Full auction platform for blind bidding on Minecraft server list slots on Minecraft.buzz"
+                :links="{
+                    website: 'https://auctions.minecraft.buzz'
                 }"
             />
         </div>
