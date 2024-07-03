@@ -89,6 +89,15 @@
                     website: 'https://auctions.minecraft.buzz'
                 }"
             />
+            <Project
+                title="Toolbird"
+                type="Web App"
+                image="/projects/toolbird.png"
+                description="Get Web Analytics, Feedback Hub and User Surveys in one tool."
+                :links="{
+                    website: 'https://toolbird.io'
+                }"
+            />
         </div>
     </div>
 </template>
