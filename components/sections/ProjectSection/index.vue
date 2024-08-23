@@ -9,7 +9,7 @@
                 title="Toolbird"
                 type="Web App"
                 image="/projects/toolbird.png"
-                description="Get Web Analytics, Feedback Hub and User Surveys in one tool."
+                description="Privacy-focused Web Analytics. Track your website visitors without compromising their privacy. Paid alternative to Google Analytics."
                 :links="{
                     website: 'https://toolbird.io'
                 }"
