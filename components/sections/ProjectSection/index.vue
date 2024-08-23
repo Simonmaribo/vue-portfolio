@@ -5,6 +5,39 @@
             <h1 class="title">Showcase of some <span class="highlight-container"><span class="highlight">projects</span></span></h1>
         </div>
         <div class="project-list">
+            <Project
+                title="Toolbird"
+                type="Web App"
+                image="/projects/toolbird.png"
+                description="Get Web Analytics, Feedback Hub and User Surveys in one tool."
+                :links="{
+                    website: 'https://toolbird.io'
+                }"
+            />
+
+            <Project 
+                title="Pushify" 
+                type="Web App & iOS App" 
+                image="/projects/pushify.png" 
+                description="Open Source Push Notification Service. Send Push Notifications to your Phone without the hassle of publishing a Mobile App. Useful for logging, monitoring and alerts."
+                :links="{
+                    website: 'https://pushify.net',
+                    github: 'https://github.com/simonmaribo/pushify',
+                    ios: 'https://apps.apple.com/dk/app/pushify-notifications/id6517357435'
+                }"
+            />
+
+
+            <Project 
+                title="Centox" 
+                type="Web App" 
+                image="/projects/centox2.png" 
+                description="Centox is a application/forum for Discord/gaming communities."
+                :links="{
+                    website: 'https://centox.io?ref=simonmaribo.dk'
+                }"
+            />
+
             <Project 
                 title="PlexHost" 
                 type="Website" 
@@ -23,15 +56,6 @@
                     website: 'https://dashboard.plexhost.dk'
                 }"
             />-->
-            <Project 
-                title="Centox" 
-                type="Web App" 
-                image="/projects/centox2.png" 
-                description="Centox is a application/forum for Discord/gaming communities."
-                :links="{
-                    website: 'https://centox.io?ref=simonmaribo.dk'
-                }"
-            />
             <Project
                 title="Pandoras Box"
                 type="Mobile App"
@@ -87,15 +111,6 @@
                 description="Full auction platform for blind bidding on Minecraft server list slots on Minecraft.buzz"
                 :links="{
                     website: 'https://auctions.minecraft.buzz'
-                }"
-            />
-            <Project
-                title="Toolbird"
-                type="Web App"
-                image="/projects/toolbird.png"
-                description="Get Web Analytics, Feedback Hub and User Surveys in one tool."
-                :links="{
-                    website: 'https://toolbird.io'
                 }"
             />
         </div>
