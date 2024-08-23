@@ -41,6 +41,17 @@
                 }"
             />
 
+            <!-- 2024 -->
+            <Project 
+                title="FastShorts.ai" 
+                type="Web App" 
+                image="/projects/fastshorts.png" 
+                description="AI-powered Video Generation. Grow your faceless channel with unique AI generated short form videos and automatically upload them to TikTok, Youtube Shorts & Instagram Reels every day."
+                :links="{
+                    website: 'https://fastshorts.ai',
+                }"
+            />
+
             <!-- 2022 -->
             <Project 
                 title="PlexHost" 
