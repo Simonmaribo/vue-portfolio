@@ -47,20 +47,11 @@
                     website: 'https://plexhost.dk'
                 }"
             />
-            <!--<Project 
-                title="PlexHost Dashboard" 
-                type="Web App" 
-                image="/projects/plexhost-dashboard.png" 
-                description="Dashboard made for the Minecraft Hosting provider PlexHost using Pterodactyl."
-                :links="{
-                    website: 'https://dashboard.plexhost.dk'
-                }"
-            />-->
             <Project
                 title="Pandoras Box"
                 type="Mobile App"
                 image="/projects/pandoras-box.png"
-                description="An App where people can put questions in a box anonymously."
+                description="Annonymous Questions for your friends at pre-parties. Expose some of the secrets in the group."
                 :links="{
                     ios: 'https://apps.apple.com/us/app/pandoras-æske/id1642058011',
                     playstore: 'https://play.google.com/store/apps/details?id=com.simonmaribo.pandorabox',
@@ -71,7 +62,7 @@
                 title="Plan Mates"
                 type="IOS App"
                 image="/projects/planmates.png"
-                description="An app to coordinate preferred dates with friends and Web "
+                description="An app to coordinate preferred dates with friends. Web Interface, so you don't need to download the app."
                 :links="{
                     ios: 'https://apps.apple.com/us/app/plan-mates/id6449609947',
                     website: 'https://planmate.plexit.group'
@@ -99,7 +90,7 @@
                 title="Minecraft-list.gg"
                 type="Web App"
                 image="/projects/minecraft-list.png"
-                description="Minecraft server list system with Votifier integration and slot auctions."
+                description="Minecraft Server List system with Votifier integration and slot auctions."
                 :links="{
                     website: 'https://minecraft-list.gg'
                 }"
