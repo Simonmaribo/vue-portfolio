@@ -5,6 +5,7 @@
             <h1 class="title">Showcase of some <span class="highlight-container"><span class="highlight">projects</span></span></h1>
         </div>
         <div class="project-list">
+            <!-- 2024 -->
             <Project
                 title="Toolbird"
                 type="Web App"
@@ -15,6 +16,7 @@
                 }"
             />
 
+            <!-- 2024 -->
             <Project 
                 title="Pushify" 
                 type="Web App & iOS App" 
@@ -28,6 +30,7 @@
             />
 
 
+            <!-- 2023 -->
             <Project 
                 title="Centox" 
                 type="Web App" 
@@ -38,6 +41,7 @@
                 }"
             />
 
+            <!-- 2022 -->
             <Project 
                 title="PlexHost" 
                 type="Website" 
@@ -47,6 +51,8 @@
                     website: 'https://plexhost.dk'
                 }"
             />
+
+            <!-- 2022 -->
             <Project
                 title="Pandoras Box"
                 type="Mobile App"
@@ -58,6 +64,8 @@
                     website: 'https://pandoras-box-app.vercel.app'
                 }"
             />
+
+            <!-- 2024 -->
             <Project
                 title="Plan Mates"
                 type="IOS App"
@@ -68,6 +76,8 @@
                     website: 'https://planmate.plexit.group'
                 }"
             />
+
+            <!-- 2023 -->
             <Project
                 title="McSetups"
                 type="Web App"
@@ -77,6 +87,8 @@
                     website: 'https://mcsetups.dk'
                 }"
             />
+
+            <!-- 2023 -->
             <Project
                 title="NB-Metal"
                 type="Website"
@@ -86,6 +98,8 @@
                     website: 'https://nb-metal.dk'
                 }"
             />
+
+            <!-- 2024 -->
             <Project
                 title="Minecraft-list.gg"
                 type="Web App"
@@ -95,6 +109,8 @@
                     website: 'https://minecraft-list.gg'
                 }"
             />
+
+            <!-- 2024 -->
             <Project
                 title="Minecraft Buzz Auctions"
                 type="Web App"
