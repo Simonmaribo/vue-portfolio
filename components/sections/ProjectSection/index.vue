@@ -7,7 +7,7 @@
         <div class="project-list">
             <!-- 2024 -->
             <Project
-                title="Toolbird"
+                title="Toolbird Analytics"
                 type="Web App"
                 image="/projects/toolbird.png"
                 description="Privacy-focused Web Analytics. Track your website visitors without compromising their privacy. Paid alternative to Google Analytics."
