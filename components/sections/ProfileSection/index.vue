@@ -6,7 +6,7 @@
             <ProfilePicture />
             <div class="profile">
             <h1 class="title">
-                Simon Maribo <span class="age">(18 y/o)</span>
+                Simon Maribo <span class="age">(19 y/o)</span>
             </h1>
             <h2 class="profession">
                 Self-taught Software Developer 
